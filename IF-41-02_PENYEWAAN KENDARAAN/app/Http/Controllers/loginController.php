@@ -34,6 +34,8 @@ class loginController extends Controller
             Session::put('login',TRUE);
             return homeCustController::index();
         }else{
+            var_dump(Session::flash('msg','Email atau Password Salah !'));
+            return redirect('login')->with('msg','Password atau Email Salah !');
             
         } 
     }

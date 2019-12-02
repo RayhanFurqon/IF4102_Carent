@@ -14,7 +14,7 @@ class registCustController extends Controller
         return view('registrasi_customer');
     }
 
-    public function submit(Request $req){
+    public static function submit(Request $req){
 
         $this->validate($req,[
             'file'=>'required|mimes:jpg,jpeg,png,bmp'

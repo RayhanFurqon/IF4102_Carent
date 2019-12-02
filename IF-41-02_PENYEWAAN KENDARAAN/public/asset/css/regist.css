@@ -1,0 +1,12 @@
+body{
+    background-color: #f4f4f5;
+}
+
+.button-group{
+    margin-top: 100px;
+}
+
+.btn-main{
+    width: 25%;
+    height: 62px;
+}
